@@ -1,0 +1,48 @@
+﻿@using MVCTestDemo.Models
+@model StudentModel
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView</title>
+</head>
+<body>
+    <div>
+        @{
+            //StudentModel student = (StudentModel)ViewData["Student"];
+            StudentModel student = (StudentModel)ViewBag.Student;
+        }
+        <h2>Student Details（ViewData、ViewBag传值）</h2>
+        <p> Name : @student.FirstName @student.LastName</p>
+        <p>Age: 
+            @if (student.Age < 18)
+            {
+                <span style="background-color:darkseagreen">@student.Age</span>
+            }
+            else
+            {
+                <span style="background-color:yellow">@student.Age</span>
+            } 
+        </p>
+        <h2>Student2 Details(强类型方式View传值，取值)</h2>
+        <p> Name :@(Model.FirstName + " " + Model.LastName)</p>
+        <p>Age: 
+        @if (Model.Age < 18)
+        {
+            <span style="background-color:darkseagreen" >@Model.Age</span>
+        }
+        else
+        {
+            <span style="background-color:yellow" >@Model.Age</span>
+        } 
+        </p>
+    </div>
+</body>
+</html>
