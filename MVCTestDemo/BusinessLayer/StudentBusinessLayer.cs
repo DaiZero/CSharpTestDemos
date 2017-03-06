@@ -1,11 +1,14 @@
 ﻿using MVCTestDemo.Models;
 using System.Collections.Generic;
+using MVCTestDemo.DataAccessLayer;
+using System.Linq;
+
 namespace MVCTestDemo.BusinessLayer
 {
     public class StudentBusinessLayer
     {
 
-        public List<StudentModel> GetStudents()
+        public List<StudentModel> GetStudentss()
         {
             List<StudentModel> stulist = new List<Models.StudentModel>();
             StudentModel st = new StudentModel()
@@ -38,6 +41,17 @@ namespace MVCTestDemo.BusinessLayer
             stulist.Add(st);
             return stulist;
         }
-       
+        public List<StudentModel> GetStudents()
+        {
+            SchoolDAL scooldal = new SchoolDAL();
+            return scooldal.Studentes.ToList();
+        }
+        public StudentModel Savestudent(StudentModel e)
+        {
+            SchoolDAL salesDal = new SchoolDAL();
+            salesDal.Studentes.Add(e);
+            salesDal.SaveChanges();
+            return e;
+        }
     }
 }

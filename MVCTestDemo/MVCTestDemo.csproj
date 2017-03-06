@@ -210,6 +210,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="DataAccessLayer\SchoolDAL.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -283,7 +284,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Student\MyView.cshtml" />
     <Content Include="Views\Student\StudentView.cshtml" />
-    <Content Include="Views\Student\StudentListView.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
+    <Content Include="Views\Student\CreateStudent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,74 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CreateStudent</title>
+</head>
+<body>
+    <div>
+        <form action="/Student/SaveStudent" method="post">
+            <table>
+                <tr>
+                    <td>
+                        First Name:
+                    </td>
+                    <td>
+                        <input type="text" id="TxtFName" name="FirstName" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        @Html.ValidationMessage("FirstName")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last Name:
+                    </td>
+                    <td>
+                        <input type="text" id="TxtLName" name="LastName" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        @Html.ValidationMessage("LastName")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Age:
+                    </td>
+                    <td>
+                        <input type="text" id="TxtAge" name="Age" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        @Html.ValidationMessage("Age")
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" name="BtnSubmit" value="Save Employee" />
+                        <input type="button" name="BtnReset" value="Reset" onclick="ResetForm();" />
+                        <input type="submit" name="BtnSubmit" value="Cancel" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        function ResetForm() {
+            document.getElementById('TxtFName').value = "";
+            document.getElementById('TxtLName').value = "";
+            document.getElementById('TxtAge').value = "";
+        }
+    </script>
+</body>
+</html>
