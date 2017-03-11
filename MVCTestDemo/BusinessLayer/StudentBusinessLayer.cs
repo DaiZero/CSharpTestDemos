@@ -46,6 +46,17 @@ namespace MVCTestDemo.BusinessLayer
             SchoolDAL scooldal = new SchoolDAL();
             return scooldal.Studentes.ToList();
         }
+        public bool IsValidUser(UserDetailsModels u)
+        {
+            if (u.UserName == "Admin" && u.Password == "Admin")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         public StudentModel Savestudent(StudentModel e)
         {
             SchoolDAL salesDal = new SchoolDAL();

@@ -1,4 +1,5 @@
 ﻿
+@model MVCTestDemo.ViewModels.CreateStudentViewModel
 @{
     Layout = null;
 }
@@ -7,68 +8,78 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CreateStudent</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
 </head>
 <body>
-    <div>
-        <form action="/Student/SaveStudent" method="post">
-            <table>
-                <tr>
-                    <td>
-                        First Name:
-                    </td>
-                    <td>
-                        <input type="text" id="TxtFName" name="FirstName" value="" />
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="right">
-                        @Html.ValidationMessage("FirstName")
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Last Name:
-                    </td>
-                    <td>
-                        <input type="text" id="TxtLName" name="LastName" value="" />
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="right">
-                        @Html.ValidationMessage("LastName")
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Age:
-                    </td>
-                    <td>
-                        <input type="text" id="TxtAge" name="Age" value="" />
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="right">
-                        @Html.ValidationMessage("Age")
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" name="BtnSubmit" value="Save Employee" />
-                        <input type="button" name="BtnReset" value="Reset" onclick="ResetForm();" />
-                        <input type="submit" name="BtnSubmit" value="Cancel" />
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </div>
-    <script>
-        function ResetForm() {
-            document.getElementById('TxtFName').value = "";
-            document.getElementById('TxtLName').value = "";
-            document.getElementById('TxtAge').value = "";
-        }
-    </script>
-</body>
-</html>
+    <div class="container">
+        <form class="form-horizontal" role="form" action="/Student/SaveStudent" method="post">
+            <div class="form-group">
+                <label for="firstname" class="col-sm-2 control-label">FirstName</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="TxtFName" name="FirstName" value="@Model.FirstName"
+                           placeholder="请输入FirstName">@*@Html.ValidationMessage("FirstName")*@
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname" class="col-sm-2 control-label">LastName</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="TxtLName" name="LastName" value="@Model.LastName"
+                               placeholder="请输入LastName">@*@Html.ValidationMessage("LastName")*@
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname" class="col-sm-2 control-label">Age</label>
+                        <div class="col-sm-10">
+                            <input type="number" max="199" min="0" class="form-control" id="TxtAge" name="Age" value="@Model.Age"
+                                   placeholder="请输入Age ">@*@Html.ValidationMessage("Age")*@
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <input type="submit" name="BtnSubmit" class="btn btn-primary" value="Save" onclick="return IsValid();" />
+                                <input type="button" name="BtnReset" value="Reset" class="btn btn-warning" onclick="ResetForm();" />
+                                <input type="submit" name="BtnSubmit" class="btn btn-danger" value="Cancel" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal fade" id="errorModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title text-danger" id="errorModelLabel">警告</h4>
+                            </div>
+                            <div class="modal-body"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
+                <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+                <script src="~/Scripts/bootstrap.min.js"></script>
+                <script src="~/Scripts/Student_Validations.js"></script>
+                <script>
+                    //$(function () {
+                    //    $("#errorModel").find(".modal-body").html("111");
+                    //    $('#errorModel').modal({
+                    //        keyboard: true
+                    //    })
+                    //});
+                    function ResetForm() {
+                        $("#TxtFName").val("");
+                        $("#TxtLName").val("");
+                        $("#TxtAge").val("");
+                        //document.getElementById('TxtFName').value = "";
+                        //document.getElementById('TxtLName').value = "";
+                        //document.getElementById('TxtAge').value = "";
+                    }
+                </script>
+            </body>
+        </html>

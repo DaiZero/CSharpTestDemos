@@ -7,6 +7,7 @@ using System;
 
 namespace MVCTestDemo.Controllers
 {
+
     public class MyStudentModelBinder : DefaultModelBinder
     {
         protected override object CreateModel(ControllerContext controllerContext, ModelBindingContext bindingContext, Type modelType)
@@ -28,7 +29,7 @@ namespace MVCTestDemo.Controllers
             return this.StudentName + "，" + this.Age.ToString() + "岁";
         }
     }
-
+    [Authorize]
     public class StudentController : Controller
     {
         public string Hello()
@@ -87,7 +88,6 @@ namespace MVCTestDemo.Controllers
             StudentBusinessLayer sbl = new StudentBusinessLayer();
             List<StudentModel> smList = new List<StudentModel>();
             smList = sbl.GetStudents();
-
             List<StudentViewModel> svmlist = new List<StudentViewModel>();
             foreach (StudentModel item in smList)
             {
@@ -97,23 +97,21 @@ namespace MVCTestDemo.Controllers
                 svm.AgeColor = svm.Age > 18 ? "Red" : "darkseagreen";
                 svmlist.Add(svm);
             }
-
             StudentListViewModel slvm = new StudentListViewModel();
             slvm.Student = svmlist;
-            //slvm.UserName = "DZero";
-
+            slvm.UserName = User.Identity.Name;
             return View("Index", slvm);
         }
         public ActionResult AddNew()
         {
-            return View("CreateStudent");
+            return View("CreateStudent", new CreateStudentViewModel());
         }
 
         public ActionResult SaveStudent([ModelBinder(typeof(MyStudentModelBinder))]StudentModel e, string BtnSubmit)
         {
             switch (BtnSubmit)
             {
-                case "Save Employee":
+                case "Save":
                     if (ModelState.IsValid)
                     {
                         StudentBusinessLayer stubal = new StudentBusinessLayer();
@@ -123,7 +121,19 @@ namespace MVCTestDemo.Controllers
                     }
                     else
                     {
-                        return View("CreateStudent");
+                        //return View("CreateStudent");
+                        CreateStudentViewModel csm = new CreateStudentViewModel();
+                        csm.FirstName = e.FirstName;
+                        csm.LastName = e.LastName;
+                        if (e.Age > 0)
+                        {
+                            csm.Age = e.Age;
+                        }
+                        else
+                        {
+                            csm.Age = 0;
+                        }
+                        return View("CreateStudent", csm);
                     }
 
                 case "Cancel":

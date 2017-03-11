@@ -25,7 +25,7 @@ namespace MVCTestDemo
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new PathString("/Account/Login"),
+                LoginPath = new PathString("/Authentication/Login"),
                 Provider = new CookieAuthenticationProvider
                 {
                     // 当用户登录时使应用程序可以验证安全戳。
