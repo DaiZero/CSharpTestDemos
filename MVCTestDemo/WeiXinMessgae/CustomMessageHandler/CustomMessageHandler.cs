@@ -1,10 +1,7 @@
-﻿/*----------------------------------------------------------------
-    Copyright (C) 2017 Senparc
-
+﻿/*------------------------------------------------
+    【源码】Copyright (C) 2017 Senparc
     文件名：CustomMessageHandler.cs
     文件功能描述：微信公众号自定义MessageHandler
-
-
     创建标识：Senparc - 20150312
 ----------------------------------------------------------------*/
 
@@ -234,12 +231,12 @@ namespace MVCTestDemo.WeiXinMessage
                 if (requestMessage.Content == "测试")
                 {
                     //进入APP测试
-                    responseMessage.Content = "您已经进入【盛派网络小助手】的测试程序，请发送任意信息进行测试。发送文字【退出】退出测试对话。10分钟内无任何交互将自动退出应用对话状态。";
+                    responseMessage.Content = "您已经进入【乐趣享】的测试程序，请发送任意信息进行测试。发送文字【退出】退出测试对话。10分钟内无任何交互将自动退出应用对话状态。";
                 }
                 else
                 {
                     //退出APP测试
-                    responseMessage.Content = "您已经退出【盛派网络小助手】的测试程序。";
+                    responseMessage.Content = "您已经退出【乐趣享】的测试程序。";
                 }
             }
             else if (requestMessage.Content == "AsyncTest")
