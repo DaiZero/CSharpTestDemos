@@ -22,11 +22,16 @@ namespace ConsoleApplication1
             //{
             //    Console.WriteLine("x>y");
             //}
-            B b = new B();
-            Console.ReadLine();
-            //A a1 = new A();
-            A a2 = new B();
-            Console.ReadLine();
+            //B b = new B();
+            //Console.ReadLine();
+            ////A a1 = new A();
+            //A a2 = new B();
+            //Console.ReadLine();
+
+            //TaskDemo.MainTest();
+            TaskDemo.MainTest2();
+
+
         }
         class B : A
         {

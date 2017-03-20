@@ -5,16 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp_TestDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="MainWindow" Height="350" Width="606.915">
+    <Grid Margin="0,0,-8,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="181*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="248*"/>
+            <ColumnDefinition Width="89*"/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <LinearGradientBrush>
                 <GradientStop Offset="0" Color="Blue"></GradientStop>
                 <GradientStop Offset="0.5" Color="LightBlue"></GradientStop>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBox Height="23" Margin="10,10,10,0" Name="textBox1" VerticalAlignment="Top" Text="{Binding ElementName=slider1, Path=Value, UpdateSourceTrigger=PropertyChanged}" />
-        <Slider  Height="21" Margin="10,40,10,0" Name="slider1" VerticalAlignment="Top" Maximum="100" ></Slider>
-        <Button Height="23" HorizontalAlignment="Right" Margin="0,70,10,0" Name="button1" VerticalAlignment="Top" Width="75">WPF</Button>
+        <TextBox Height="23" Margin="10,10,10,0" Name="textBox1" VerticalAlignment="Top" Text="{Binding ElementName=slider1, Path=Value, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="5" />
+        <Slider  Height="21" Margin="10,40,10,0" Name="slider1" VerticalAlignment="Top" Maximum="100" Grid.ColumnSpan="5" ></Slider>
+        <Label Height="23" Margin="10,70,10,0" Name="lblHello" VerticalAlignment="Top" ToolTip="欢迎词" Grid.ColumnSpan="5">欢迎你光临WPF的世界!</Label>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,100,43,0" Name="button1" VerticalAlignment="Top" Width="100"  Click="button1_Click" Grid.Column="1">Canvas</Button>
+        <Button  Height="23" HorizontalAlignment="Right" Margin="0,100,161,0" Name="btnThd" VerticalAlignment="Top" Width="150" Click="btnThd_Click" Grid.ColumnSpan="3" Grid.Column="1">多线程Invoke同步调用</Button>
+        <Button  Height="23" HorizontalAlignment="Right" Margin="0,100,50,0" Name="btnAppBeginInvoke" VerticalAlignment="Top" Width="200" Click="btnAppBeginInvoke_Click" Grid.Column="3" Grid.ColumnSpan="2">多线程BeginInvoke异步调用</Button>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,130,0,0" Name="btnAddByCode" VerticalAlignment="Top" Width="100" Click="btnAddByCode_Click"  Grid.Column="1">WrapPanel</Button>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,130,100,0" Name="btnAddbtnByCode" VerticalAlignment="Top" Width="100" Click="btnAddbtnByCode_Click"  Grid.Column="1">StackPanel</Button>
     </Grid>
 </Window>
