@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp_TestDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="606.915">
-    <Grid Margin="0,0,-8,0">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="26*"/>
             <ColumnDefinition Width="181*"/>
@@ -28,5 +28,7 @@
         <Button  Height="23" HorizontalAlignment="Right" Margin="0,100,50,0" Name="btnAppBeginInvoke" VerticalAlignment="Top" Width="200" Click="btnAppBeginInvoke_Click" Grid.Column="3" Grid.ColumnSpan="2">多线程BeginInvoke异步调用</Button>
         <Button Height="23" HorizontalAlignment="Right" Margin="0,130,0,0" Name="btnAddByCode" VerticalAlignment="Top" Width="100" Click="btnAddByCode_Click"  Grid.Column="1">WrapPanel</Button>
         <Button Height="23" HorizontalAlignment="Right" Margin="0,130,100,0" Name="btnAddbtnByCode" VerticalAlignment="Top" Width="100" Click="btnAddbtnByCode_Click"  Grid.Column="1">StackPanel</Button>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,130,-100,0" Name="btnPage1" VerticalAlignment="Top" Width="100" Click="btnPage1_Click"  Grid.Column="1">Page1</Button>
+
     </Grid>
 </Window>

@@ -3,6 +3,7 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 
@@ -268,6 +269,25 @@ namespace WpfApp_TestDemo
         private void btnAddbtnByCode_Click(object sender, RoutedEventArgs e)
         {
             StackPanels();
+        }
+
+
+        private void btnPage1_Click(object sender, RoutedEventArgs e)
+        {
+            //NavigationService.GetNavigationService(this).Navigate(new Uri("Page1.xaml", UriKind.Relative));
+
+            // NavigationService.GetNavigationService(this).GoForward();//向后转
+
+            //NavigationService.GetNavigationService(this).GoBack();　 //向前转
+
+            //方法3：另打开
+            //NavigationWindow window = new NavigationWindow();
+            //window.Source = new Uri("Page1.xaml", UriKind.Relative);
+            //window.Show();
+
+            //方法3：页面替换
+            this.Content = new Page1();
+
         }
     }
 }
