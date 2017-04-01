@@ -6,6 +6,7 @@ using System.Windows.Media;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using WpfApp_TestDemo.Views;
 
 namespace WpfApp_TestDemo
 {
@@ -177,7 +178,8 @@ namespace WpfApp_TestDemo
             //Button3
             Button b3 = new Button();
             b3.Content = "后台代码，第三个,修改按钮排列方式";
-            b3.Click += (sender, e)=>{
+            b3.Click += (sender, e) =>
+            {
                 if (sp.Orientation == Orientation.Vertical)
                 {
                     sp.Orientation = Orientation.Horizontal;
@@ -288,6 +290,18 @@ namespace WpfApp_TestDemo
             //方法3：页面替换
             this.Content = new Page1();
 
+        }
+
+        private void Test1_Click(object sender, RoutedEventArgs e)
+        {
+            Test1 ts1 = new Test1();
+            ts1.Show();
+        }
+
+        private void Test2_Click(object sender, RoutedEventArgs e)
+        {
+            Test2 ts = new Test2();
+            ts.Show();
         }
     }
 }
