@@ -29,10 +29,22 @@ namespace ConsoleApplication1
             //Console.ReadLine();
 
             //TaskDemo.MainTest();
-            TaskDemo.MainTest2();
+            //TaskDemo.MainTest2();
 
-
+            //委托
+            Delegate_Event_Demo ded = new Delegate_Event_Demo();
+            MyDelegate md = ded.ShowMsg;//将实例化的方法赋值给委托实例,
+            md+= ded.ShowMsgBox;//"+="
+            md("Hello World");
+            CallbackMethod(100,50, md);
+            Console.ReadLine();
         }
+
+        private static void CallbackMethod(int m, int n, MyDelegate dlg)
+        {
+            dlg((m + n).ToString());
+        }
+
         class B : A
         {
             static B()
