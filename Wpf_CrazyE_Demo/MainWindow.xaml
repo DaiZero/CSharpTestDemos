@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_CrazyE_Demo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="600" Width="1000">
+    <Border
+       Background="WhiteSmoke"
+       BorderBrush="Black"
+        BorderThickness="3">
+        <Grid>
+
+        </Grid>
+    </Border>
 </Window>

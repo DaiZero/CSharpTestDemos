@@ -6,7 +6,7 @@ namespace Wpf_CrazyE_Demo.Services
     {
         public void PlaceOrder(List<string> dishs)
         {
-            System.IO.File.WriteAllLines(@"C:\order.txt", dishs.ToArray());
+            System.IO.File.WriteAllLines(@"D:\order.txt", dishs.ToArray());
         }
     }
 }

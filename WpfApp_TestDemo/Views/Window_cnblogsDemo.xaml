@@ -94,12 +94,12 @@
                     </GroupBox>
                     <GroupBox Header="48小时阅读排行榜" Height="160">
                         <StackPanel Orientation="Vertical">
-                            <Button Content="EntityFramework Core不得不注意的性能优化意外收获，你会用错？"/>
+                            <Button Content="EntityFramework Core不得不注意的性能优化意外收获，你会用错？" HorizontalContentAlignment="Left" />
                             <Button Content="面向个人的技术咨询服务" HorizontalContentAlignment="Left" />
-                            <Button Content="南京.NET线下活动后续—一对一技术交流"/>
-                            <Button Content="微服务架构的简单实现-Stardust"/>
-                            <Button Content="我的数据库设计实践（一）"/>
-                            <Button Content="ABP框架实战 1.基础信息维护"/>
+                            <Button Content="南京.NET线下活动后续—一对一技术交流" HorizontalContentAlignment="Left" />
+                            <Button Content="微服务架构的简单实现-Stardust" HorizontalContentAlignment="Left" />
+                            <Button Content="我的数据库设计实践（一）" HorizontalContentAlignment="Left" />
+                            <Button Content="ABP框架实战 1.基础信息维护" HorizontalContentAlignment="Left" />
                         </StackPanel>
                     </GroupBox>
                 </StackPanel>
