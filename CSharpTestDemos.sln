@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_TestDemo", "WpfApp_T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_CrazyE_Demo", "Wpf_CrazyE_Demo\Wpf_CrazyE_Demo.csproj", "{26A1F8E8-23DB-4564-AA59-414FB2C49DF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLibrary", "CommonLibrary\CommonLibrary.csproj", "{CF3EC411-69D5-4270-A435-2B4505C1D756}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{26A1F8E8-23DB-4564-AA59-414FB2C49DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26A1F8E8-23DB-4564-AA59-414FB2C49DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26A1F8E8-23DB-4564-AA59-414FB2C49DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF3EC411-69D5-4270-A435-2B4505C1D756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF3EC411-69D5-4270-A435-2B4505C1D756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF3EC411-69D5-4270-A435-2B4505C1D756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF3EC411-69D5-4270-A435-2B4505C1D756}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
