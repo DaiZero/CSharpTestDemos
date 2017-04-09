@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_CrazyE_Demo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1000">
+        Title="{Binding Resaurant.Name,StringFormat=\{0\}-在线点餐}" Height="600" Width="1000">
     <Border
        Background="WhiteSmoke"
        BorderBrush="Black"

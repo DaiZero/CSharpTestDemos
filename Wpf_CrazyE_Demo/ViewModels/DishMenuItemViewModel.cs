@@ -16,7 +16,7 @@ namespace Wpf_CrazyE_Demo.ViewModels
             set
             {
                 isSelected = value;
-                this.OnPropertyChanged("IsSelected");
+                this.RaisePropertyChanged("IsSelected");
             }
         }
     }
