@@ -32,11 +32,16 @@ namespace ConsoleApplication1
             //TaskDemo.MainTest2();
 
             //委托
-            Delegate_Event_Demo ded = new Delegate_Event_Demo();
-            MyDelegate md = ded.ShowMsg;//将实例化的方法赋值给委托实例,
-            md+= ded.ShowMsgBox;//"+="
-            md("Hello World");
-            CallbackMethod(100,50, md);
+            //Delegate_Event_Demo ded = new Delegate_Event_Demo();
+            //MyDelegate md = ded.ShowMsg;//将实例化的方法赋值给委托实例,
+            //md+= ded.ShowMsgBox;//"+="
+            //md("Hello World");
+            //CallbackMethod(100,50, md);
+            //Console.ReadLine();
+
+
+            //异步
+            Test.write();
             Console.ReadLine();
         }
 
