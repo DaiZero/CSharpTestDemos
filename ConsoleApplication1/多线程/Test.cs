@@ -21,11 +21,11 @@ namespace ConsoleApplication1
             //};
 
             //Console.WriteLine("111");
-            //await Task.Run(() =>
-            //{
-            //    Thread.Sleep(1000);  //异步执行一些任务
-            //    Console.WriteLine("222");
-            //});
+            await Task.Run(() =>
+            {
+                Thread.Sleep(1000);  //异步执行一些任务
+                Console.WriteLine("222");
+            });
             double num1 = 1234.5;
             double num2 = 1.01;
             await Task.Run(()=> {
