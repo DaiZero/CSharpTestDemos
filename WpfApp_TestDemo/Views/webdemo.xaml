@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp_TestDemo.Views.webdemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_TestDemo.Views"
+        mc:Ignorable="d"
+        Title="webdemo" Height="800" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800" />
+        </Grid.ColumnDefinitions>
+        <Frame x:Name="frame1" Height="750" Width="780" Content="Frame1" HorizontalAlignment="Left"  Margin="10,10,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

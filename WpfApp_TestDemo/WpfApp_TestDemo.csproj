@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{0CB9E902-0DF5-4D4E-A945-E0F8B328925F}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WpfApp_TestDemo</RootNamespace>
     <AssemblyName>WpfApp_TestDemo</AssemblyName>
@@ -34,6 +34,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -65,6 +68,9 @@
     </Compile>
     <Compile Include="ViewModels\NotificationObject.cs" />
     <Compile Include="ViewModels\Test1ViewModel.cs" />
+    <Compile Include="Views\webdemo.xaml.cs">
+      <DependentUpon>webdemo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Window_cnblogsDemo.xaml.cs">
       <DependentUpon>Window_cnblogsDemo.xaml</DependentUpon>
     </Compile>
@@ -89,6 +95,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Test2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\webdemo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

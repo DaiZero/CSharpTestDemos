@@ -303,5 +303,11 @@ namespace WpfApp_TestDemo
             Test2 ts = new Test2();
             ts.Show();
         }
+
+        private void WebDemo_Click(object sender, RoutedEventArgs e)
+        {
+            webdemo wd = new webdemo();
+            wd.Show();
+        }
     }
 }
