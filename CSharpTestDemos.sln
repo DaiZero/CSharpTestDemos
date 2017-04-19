@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ_Prism.Shell", "DZ_Prism\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ_Prism.UserLogin.Module", "Modules\DZ_Prism.UserLogin.Module\DZ_Prism.UserLogin.Module.csproj", "{6D6DCA87-3343-48D1-9BE4-E5D10F418BFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ_Prism.Server.UserLogin.Contract", "Contract\DZ_Prism.UserLogin.Contract\DZ_Prism.Server.UserLogin.Contract.csproj", "{EC69BE82-2138-453A-9D61-367A2E37F7F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ_Prism.Server.UserLogin.BusinessLogic", "BusinessLogic\DZ_Prism.Server.UserLogin.BusinessLogic\DZ_Prism.Server.UserLogin.BusinessLogic.csproj", "{9A631142-FA9D-44EE-95F5-D53BBD122D1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{6D6DCA87-3343-48D1-9BE4-E5D10F418BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D6DCA87-3343-48D1-9BE4-E5D10F418BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D6DCA87-3343-48D1-9BE4-E5D10F418BFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC69BE82-2138-453A-9D61-367A2E37F7F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC69BE82-2138-453A-9D61-367A2E37F7F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC69BE82-2138-453A-9D61-367A2E37F7F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC69BE82-2138-453A-9D61-367A2E37F7F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A631142-FA9D-44EE-95F5-D53BBD122D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A631142-FA9D-44EE-95F5-D53BBD122D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A631142-FA9D-44EE-95F5-D53BBD122D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A631142-FA9D-44EE-95F5-D53BBD122D1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,5 +96,7 @@ Global
 		{68359C73-4F41-46A6-90BA-4C9BC7A512C3} = {F129CCA1-193F-40C4-843D-EE44FD60B5A5}
 		{308B9E58-563B-4C6A-8EEC-EE4F0AB22E90} = {257B731F-67AD-49EE-9445-7EB736CB312F}
 		{6D6DCA87-3343-48D1-9BE4-E5D10F418BFA} = {B82E699B-F93F-4939-BD74-20CA0C09D1B5}
+		{EC69BE82-2138-453A-9D61-367A2E37F7F0} = {CD210163-F2D7-49C8-8DB7-12491AD6BC7D}
+		{9A631142-FA9D-44EE-95F5-D53BBD122D1E} = {B04DD77E-C90A-4D8C-9E10-BCCC8D3D068B}
 	EndGlobalSection
 EndGlobal
