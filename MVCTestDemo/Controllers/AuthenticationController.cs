@@ -1,9 +1,9 @@
-﻿using MVCTestDemo.BusinessLayer;
-using MVCTestDemo.Models;
+﻿using DZero.Mvc.TestDemo.BusinessLayer;
+using DZero.Mvc.TestDemo.Models;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace MVCTestDemo.Controllers
+namespace DZero.Mvc.TestDemo.Controllers
 {
     public class AuthenticationController : Controller
     {

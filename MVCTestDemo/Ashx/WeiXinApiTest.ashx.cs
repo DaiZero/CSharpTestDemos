@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MVCTestDemo.Ashx
+namespace DZero.Mvc.TestDemo.Ashx
 {
     /// <summary>
     /// WeiXinApiTest 的摘要说明

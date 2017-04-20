@@ -1,4 +1,4 @@
-﻿namespace MVCTestDemo.ViewModels
+﻿namespace DZero.Mvc.TestDemo.ViewModels
 {
     public class CreateStudentViewModel
     {

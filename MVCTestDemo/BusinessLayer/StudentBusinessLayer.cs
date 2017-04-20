@@ -1,9 +1,9 @@
-﻿using MVCTestDemo.Models;
+﻿using DZero.Mvc.TestDemo.Models;
 using System.Collections.Generic;
-using MVCTestDemo.DataAccessLayer;
+using DZero.Mvc.TestDemo.DataAccessLayer;
 using System.Linq;
 
-namespace MVCTestDemo.BusinessLayer
+namespace DZero.Mvc.TestDemo.BusinessLayer
 {
     public class StudentBusinessLayer
     {

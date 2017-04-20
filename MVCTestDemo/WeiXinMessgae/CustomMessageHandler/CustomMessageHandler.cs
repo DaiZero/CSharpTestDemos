@@ -27,7 +27,7 @@ using Senparc.Weixin.MP.AdvancedAPIs;
 using System.Threading.Tasks;
 using Senparc.Weixin;
 
-namespace MVCTestDemo.WeiXinMessage
+namespace DZero.Mvc.TestDemo.WeiXinMessage
 {
     /// <summary>
     /// 自定义MessageHandler

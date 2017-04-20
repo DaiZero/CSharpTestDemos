@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
-namespace MVCTestDemo.Models
+namespace DZero.Mvc.TestDemo.Models
 {
     public class IndexViewModel
     {

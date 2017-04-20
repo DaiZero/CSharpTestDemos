@@ -4,7 +4,7 @@ using System.Data.Entity;
 //using System.Web.ModelBinding;
 using System.Web.Mvc;
 
-namespace MVCTestDemo.Models
+namespace DZero.Mvc.TestDemo.Models
 {
 
     public class FirstNameValidation : ValidationAttribute

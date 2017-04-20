@@ -1,11 +1,11 @@
 ﻿using Senparc.Weixin.MP;
 using Senparc.Weixin.MP.Entities.Request;
 using System.Web.Mvc;
-using MVCTestDemo.WeiXinMessage;
+using DZero.Mvc.TestDemo.WeiXinMessage;
 using Senparc.Weixin.MP.MvcExtension;
 
 
-namespace MVCTestDemo.Controllers
+namespace DZero.Mvc.TestDemo.Controllers
 {
 
     public class WeiXinController : Controller

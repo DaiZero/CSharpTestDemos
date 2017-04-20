@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace MVCTestDemo.Models
+namespace DZero.Mvc.TestDemo.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

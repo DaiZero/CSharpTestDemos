@@ -1,1 +1,1 @@
-﻿<%@ WebHandler Language="C#" CodeBehind="WeiXinApiTest.ashx.cs" Class="MVCTestDemo.Ashx.WeiXinApiTest" %>
+﻿<%@ WebHandler Language="C#" CodeBehind="WeiXinApiTest.ashx.cs" Class="DZero.Mvc.TestDemo.Ashx.WeiXinApiTest" %>

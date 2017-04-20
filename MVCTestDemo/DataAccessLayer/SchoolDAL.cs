@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
-using MVCTestDemo.Models;
-namespace MVCTestDemo.DataAccessLayer
+using DZero.Mvc.TestDemo.Models;
+namespace DZero.Mvc.TestDemo.DataAccessLayer
 {
     public class SchoolDAL : DbContext
     {

@@ -1,11 +1,11 @@
 ﻿using System.Web.Mvc;
-using MVCTestDemo.Models;
-using MVCTestDemo.ViewModels;
-using MVCTestDemo.BusinessLayer;
+using DZero.Mvc.TestDemo.Models;
+using DZero.Mvc.TestDemo.ViewModels;
+using DZero.Mvc.TestDemo.BusinessLayer;
 using System.Collections.Generic;
 using System;
 
-namespace MVCTestDemo.Controllers
+namespace DZero.Mvc.TestDemo.Controllers
 {
 
     public class MyStudentModelBinder : DefaultModelBinder

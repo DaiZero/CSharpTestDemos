@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(MVCTestDemo.Startup))]
-namespace MVCTestDemo
+[assembly: OwinStartupAttribute(typeof(DZero.Mvc.TestDemo.Startup))]
+namespace DZero.Mvc.TestDemo
 {
     public partial class Startup
     {

@@ -16,7 +16,7 @@ using System.Text;
 using Senparc.Weixin.Context;
 using Senparc.Weixin.MP.Entities;
 
-namespace MVCTestDemo.WeiXinMessage
+namespace DZero.Mvc.TestDemo.WeiXinMessage
 {
     public class CustomMessageContext : MessageContext<IRequestMessageBase, IResponseMessageBase>
     {

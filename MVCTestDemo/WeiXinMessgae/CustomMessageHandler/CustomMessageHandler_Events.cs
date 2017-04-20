@@ -22,7 +22,7 @@ using Senparc.Weixin.MP.Helpers;
 using Senparc.Weixin.MP.MessageHandlers;
 
 
-namespace MVCTestDemo.WeiXinMessage
+namespace DZero.Mvc.TestDemo.WeiXinMessage
 {
     /// <summary>
     /// 自定义MessageHandler

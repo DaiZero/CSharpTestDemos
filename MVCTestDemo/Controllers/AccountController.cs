@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using MVCTestDemo.Models;
+using DZero.Mvc.TestDemo.Models;
 
-namespace MVCTestDemo.Controllers
+namespace DZero.Mvc.TestDemo.Controllers
 {
     [Authorize]
     public class AccountController : Controller

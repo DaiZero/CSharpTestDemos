@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace MVCTestDemo.Controllers
+namespace DZero.Mvc.TestDemo.Controllers
 {
     public class HomeController : Controller
     {

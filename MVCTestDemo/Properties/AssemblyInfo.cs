@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息是通过以下项进行控制的
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("MVCTestDemo")]
+[assembly: AssemblyTitle("DZero.Mvc.TestDemo")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("MVCTestDemo")]
-[assembly: AssemblyCopyright("版权所有(C) Microsoft 2017")]
+[assembly: AssemblyProduct("DZero.Mvc.TestDemo")]
+[assembly: AssemblyCopyright("版权所有(C) DZero")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

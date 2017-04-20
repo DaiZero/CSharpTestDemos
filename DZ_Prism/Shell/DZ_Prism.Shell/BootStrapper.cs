@@ -21,16 +21,8 @@ namespace DZ_Prism.Shell
         protected override void InitializeShell()
         {
             base.InitializeShell();
-
-            if (true)
-            {
-                App.Current.MainWindow = (Window)Shell;
-                App.Current.MainWindow.Show();
-            }
-            else
-            {
-                Environment.Exit(0);
-            }
+            App.Current.MainWindow = (Window)Shell;
+            App.Current.MainWindow.Show();
 
         }
 

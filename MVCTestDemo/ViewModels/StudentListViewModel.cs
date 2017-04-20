@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-namespace MVCTestDemo.ViewModels
+namespace DZero.Mvc.TestDemo.ViewModels
 {
     public class StudentListViewModel
     {

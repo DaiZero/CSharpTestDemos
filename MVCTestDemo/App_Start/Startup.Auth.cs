@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using MVCTestDemo.Models;
+using DZero.Mvc.TestDemo.Models;
 
-namespace MVCTestDemo
+namespace DZero.Mvc.TestDemo
 {
     public partial class Startup
     {

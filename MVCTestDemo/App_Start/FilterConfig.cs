@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace MVCTestDemo
+namespace DZero.Mvc.TestDemo
 {
     public class FilterConfig
     {
