@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 
-namespace ConsoleApplication1
+namespace DZero.ConsoleApp.TestDemo
 {
     delegate void MyDelegate(string message);
     class Delegate_Event_Demo

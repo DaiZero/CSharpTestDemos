@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplicationTestDemo", "ConsoleApplication1\ConsoleApplicationTestDemo.csproj", "{56B0CDC6-5982-4677-8AEA-4FBEB565EAD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero.ConsoleApp.TestDemo", "ConsoleApplication1\DZero.ConsoleApp.TestDemo.csproj", "{56B0CDC6-5982-4677-8AEA-4FBEB565EAD7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_TestDemo", "WpfApp_TestDemo\WpfApp_TestDemo.csproj", "{0CB9E902-0DF5-4D4E-A945-E0F8B328925F}"
 EndProject
