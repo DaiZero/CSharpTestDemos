@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero.Prism.TestDemo.Infras
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero.Prism.TestDemo.Infrastructure.Client", "PrismDemo\Infrastructure\DZero.Prism.TestDemo.Infrastructure.Client\DZero.Prism.TestDemo.Infrastructure.Client.csproj", "{6C4369DD-B24F-4E80-962E-32833E2A4EAF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_Module", "02_Module", "{39AB9B89-A038-43C0-8055-98EBB567B167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero.Prism.TestDemo.Client.UserLogin.Module", "PrismDemo\Module\DZero.Prism.TestDemo.Client.UserLogin.Module\DZero.Prism.TestDemo.Client.UserLogin.Module.csproj", "{162D5636-C1C9-4389-9C9A-680A816CDD60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,10 @@ Global
 		{6C4369DD-B24F-4E80-962E-32833E2A4EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C4369DD-B24F-4E80-962E-32833E2A4EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C4369DD-B24F-4E80-962E-32833E2A4EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{162D5636-C1C9-4389-9C9A-680A816CDD60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{162D5636-C1C9-4389-9C9A-680A816CDD60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{162D5636-C1C9-4389-9C9A-680A816CDD60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{162D5636-C1C9-4389-9C9A-680A816CDD60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,5 +101,7 @@ Global
 		{CD60D0F3-2ACB-4D1E-A984-C2BFA8CA8651} = {8DDE6EF9-A71C-41DB-BEB6-0BC6EDC13B6A}
 		{C4B33FF8-66AC-41FC-8419-6581160C7F90} = {8DDE6EF9-A71C-41DB-BEB6-0BC6EDC13B6A}
 		{6C4369DD-B24F-4E80-962E-32833E2A4EAF} = {8DDE6EF9-A71C-41DB-BEB6-0BC6EDC13B6A}
+		{39AB9B89-A038-43C0-8055-98EBB567B167} = {C4FDD323-239D-4A0E-8A36-4161E9D67804}
+		{162D5636-C1C9-4389-9C9A-680A816CDD60} = {39AB9B89-A038-43C0-8055-98EBB567B167}
 	EndGlobalSection
 EndGlobal

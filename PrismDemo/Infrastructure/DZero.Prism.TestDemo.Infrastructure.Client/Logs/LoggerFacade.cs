@@ -10,6 +10,8 @@ namespace DZero.Prism.TestDemo.Infrastructure.Client.Logs
     public class LoggerFacade : ILoggerFacade, IDisposable
     {
         private readonly ILog logger;
+
+
         public LoggerFacade()
         {
             logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
