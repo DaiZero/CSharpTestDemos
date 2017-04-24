@@ -19,23 +19,20 @@ namespace DZero.Prism.TestDemo.Client.UserLogin.Module.ViewModels
             set
             {
                 _dialogResult = value;
-                //RaisePropertyChanged("DialogResult");// OnPropertyChanged("DialogResult");OnPropertyChanged方法已过时
+                RaisePropertyChanged("DialogResult");// OnPropertyChanged("DialogResult");OnPropertyChanged方法已过时
 
                 //BindableBase中的SetProperty方法将负责为你启动任何RaisePropertyChanged事件以及照顾任何所需的验证。
-                SetProperty(ref _dialogResult, value, "DialogResult");
+                //SetProperty(ref _dialogResult, value, "DialogResult");
             }
         }
 
         ICommand _confirm;
+        //确认
         public ICommand Confirm
         {
             get
             {
-                if (_confirm == null)
-                {
-                    _confirm = new DelegateCommand(OnConfirm);
-                }
-                return _confirm;
+                return _confirm ?? new DelegateCommand(OnConfirm);
             }
         }
 
@@ -46,15 +43,12 @@ namespace DZero.Prism.TestDemo.Client.UserLogin.Module.ViewModels
         }
 
         ICommand _cancel;
+        //取消
         public ICommand Cancel
         {
             get
             {
-                if (_cancel == null)
-                {
-                    _cancel = new DelegateCommand(OnCancle);
-                }
-                return _cancel;
+                return _cancel ?? new DelegateCommand(OnCancle);
             }
         }
 

@@ -96,6 +96,8 @@
     <Compile Include="Constants\PageType.cs" />
     <Compile Include="Constants\WindowSizeConstant.cs" />
     <Compile Include="GlobalApplication.cs" />
+    <Compile Include="RegionNames.cs" />
+    <Compile Include="ViewNames.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Logs\CustomPatternLayout.cs" />
