@@ -35,6 +35,7 @@
         <Button Content="MovingButton" x:Name="MovingButton" Grid.Column="1" HorizontalAlignment="Left" Margin="92,174,0,0" VerticalAlignment="Top" Width="90" Click="MovingButton_Click"/>
         <Button Content="NoWindowStyle" x:Name="NoWindowStyle" Grid.Column="2" HorizontalAlignment="Left" Margin="0,174,0,0" VerticalAlignment="Top" Width="90" Click="NoWindowStyle_Click"  Grid.ColumnSpan="2"/>
         <Button Content="drag" x:Name="drag" Grid.Column="3" HorizontalAlignment="Left" Margin="84,174,0,0" VerticalAlignment="Top" Width="90" Click="drag_Click"/>
+        <Button Content="arrowLine" x:Name="arrowLine" Grid.Column="3" HorizontalAlignment="Left" Margin="179,174,0,0" VerticalAlignment="Top" Width="90" Click="arrowLine_Click"  Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

@@ -327,5 +327,11 @@ namespace WpfApp_TestDemo
             drag dg = new Views.drag();
             dg.Show();
         }
+
+        private void arrowLine_Click(object sender, RoutedEventArgs e)
+        {
+            arrowLine al = new Views.arrowLine();
+            al.Show();
+        }
     }
 }
