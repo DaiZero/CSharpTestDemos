@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp_TestDemo.Views"
         mc:Ignorable="d"
-        Title="arrowLine" Height="300" Width="300">
+        Title="arrowLine" Height="600" Width="600">
     <Grid>
         <Canvas x:Name="canvas1" Background="Green">
-            <Canvas  Background="Yellow" Canvas.Left="0" Canvas.Top="0" Height="50" Name="canvas2" Width="50"></Canvas>
-            <Canvas  Background="Yellow" Canvas.Left="200" Canvas.Top="200" Height="50" Name="canvas3" Width="50"></Canvas>
+            <Canvas  Background="Black"  Canvas.Left="0" Canvas.Top="0" Height="50" Name="canvas2" Width="50"></Canvas>
+            <Canvas  Background="Black" Canvas.Left="200" Canvas.Top="200" Height="50" Name="canvas3" Width="50"></Canvas>
         </Canvas>
     </Grid>
 </Window>
