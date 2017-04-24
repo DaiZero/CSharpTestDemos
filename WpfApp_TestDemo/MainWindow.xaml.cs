@@ -309,5 +309,11 @@ namespace WpfApp_TestDemo
             webdemo wd = new webdemo();
             wd.Show();
         }
+
+        private void MovingButton_Click(object sender, RoutedEventArgs e)
+        {
+            MovingButton mb = new Views.MovingButton();
+            mb.Show();
+        }
     }
 }
