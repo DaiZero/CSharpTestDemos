@@ -315,5 +315,17 @@ namespace WpfApp_TestDemo
             MovingButton mb = new Views.MovingButton();
             mb.Show();
         }
+
+        private void NoWindowStyle_Click(object sender, RoutedEventArgs e)
+        {
+            NoWindowStyle nws = new Views.NoWindowStyle();
+            nws.Show();
+        }
+
+        private void drag_Click(object sender, RoutedEventArgs e)
+        {
+            drag dg = new Views.drag();
+            dg.Show();
+        }
     }
 }

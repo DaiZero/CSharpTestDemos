@@ -60,8 +60,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Command\DelegateCommand.cs" />
+    <Compile Include="Views\drag.xaml.cs">
+      <DependentUpon>drag.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MovingButton.xaml.cs">
       <DependentUpon>MovingButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NoWindowStyle.xaml.cs">
+      <DependentUpon>NoWindowStyle.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Test1.xaml.cs">
       <DependentUpon>Test1.xaml</DependentUpon>
@@ -93,7 +99,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\drag.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MovingButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\NoWindowStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
