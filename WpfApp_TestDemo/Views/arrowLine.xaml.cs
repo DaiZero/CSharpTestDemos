@@ -43,15 +43,15 @@ namespace WpfApp_TestDemo.Views
             Dictionary<string, Point> dic = new Dictionary<string, Point>();
             foreach (UIElement fe in canvas1.Children)
             {
-                string name = ((System.Windows.Controls.Canvas)fe).Name;
-                double top = (double)fe.GetValue(System.Windows.Controls.Canvas.TopProperty);
-                double left = (double)fe.GetValue(System.Windows.Controls.Canvas.LeftProperty);
+                string name = ((Canvas)fe).Name;
+                double top = (double)fe.GetValue(Canvas.TopProperty);
+                double left = (double)fe.GetValue(Canvas.LeftProperty);
                 dic.Add(name, new Point(top, left));
             }
             //方法二
             foreach (FrameworkElement fe in canvas1.Children)
             {
-
+                string name = fe.Name;
                 double left = Canvas.GetLeft(fe);
                 double top = Canvas.GetTop(fe);
                 double right = Canvas.GetRight(fe);
@@ -81,7 +81,7 @@ namespace WpfApp_TestDemo.Views
             //line.X2 = dic[nameof(canvas3)].X;
             //line.Y2 = dic[nameof(canvas3)].Y;
             //this.canvas1.Children.Add(line);
-            Shape s= DrawLinkArrow(dic[nameof(canvas2)], dic[nameof(canvas3)]);
+            Shape s= DrawArrowLink(dic[nameof(canvas2)], dic[nameof(canvas3)]);
             this.canvas1.Children.Add(s);
 
         }
@@ -92,7 +92,7 @@ namespace WpfApp_TestDemo.Views
         /// <param name="p1"></param>
         /// <param name="p2"></param>
         /// <returns></returns>
-        private static Shape DrawLinkArrow(Point p1, Point p2)
+        private static Shape DrawArrowLink(Point p1, Point p2)
         {
             //GeometryGroup=>PathGeometry=>PathFigure=>LineSegment
 
@@ -139,7 +139,7 @@ namespace WpfApp_TestDemo.Views
 
             lineGroup.Children.Add(pathGeometry);
 
-            //LineGeometry表示一个线性的几何图形
+            // LineGeometry表示一个线性的几何图形
             // StartPoint 表示线条的开始端点的位置
             // StartPoint 表示线条的开始端点的位置
             LineGeometry connectorGeometry = new LineGeometry();
