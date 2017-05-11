@@ -22,7 +22,10 @@ namespace DZero.ConsoleApp.TestDemo
             }
             else
             {
-                sde.TblStudent.Add(stu);
+                //方法一：
+                //sde.TblStudent.Add(stu);
+                //方法二:
+                sde.Entry(stu).State = System.Data.Entity.EntityState.Added;
                 sde.SaveChanges();
                 Console.WriteLine($"新增学生：{stu.FirstName} {stu.LastName}");
             }
@@ -53,9 +56,11 @@ namespace DZero.ConsoleApp.TestDemo
             var studentlist = sde.TblStudent.Where<TblStudent>(s => s.FirstName == "Shadow").ToList();
             if (studentlist != null)
             {
-                
                 foreach (TblStudent item in studentlist)
                 {
+                    //方法一：
+                    //sde.TblStudent.Remove(item);
+                    //方法二：
                     sde.Entry(item).State = System.Data.Entity.EntityState.Deleted;
                     Console.WriteLine($"删除：{item.FirstName} {item.LastName}");
                 }
