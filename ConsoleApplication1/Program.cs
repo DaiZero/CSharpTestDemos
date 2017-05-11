@@ -41,7 +41,14 @@ namespace DZero.ConsoleApp.TestDemo
 
 
             //异步
-            Test.write();
+            //Test.write();
+            //Console.ReadLine();
+
+            
+
+            new EF_Test().Add();
+            new EF_Test().Add2();
+            //new EF_Test().Delete();
             Console.ReadLine();
         }
 
