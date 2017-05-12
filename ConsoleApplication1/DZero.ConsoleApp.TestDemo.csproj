@@ -48,6 +48,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -59,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\StudentModel.cs" />
     <Compile Include="ORM\Dapper_Test.cs" />
     <Compile Include="Delegate_Event_Demo.cs" />
     <Compile Include="ORM\EF_Test.cs" />

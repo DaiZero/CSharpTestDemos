@@ -46,9 +46,12 @@ namespace DZero.ConsoleApp.TestDemo
 
             
 
-            new EF_Test().Add();
-            new EF_Test().Add2();
+            //new EF_Test().Add();
+            //new EF_Test().Add2();
             //new EF_Test().Delete();
+            //Console.ReadLine();
+
+           var s= new Dapper_Test().QueryAll();
             Console.ReadLine();
         }
 
