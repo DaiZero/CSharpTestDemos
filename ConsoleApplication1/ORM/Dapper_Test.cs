@@ -60,11 +60,12 @@ namespace DZero.ConsoleApp.TestDemo
             {
                 stuList = conn.Query<StudentModel>("select * from TblStudent").AsList();
             }
-            if (stuList.Count > 0)
-            {
-                stuList.ForEach((stu) => Console.WriteLine($"ID:{stu.StudentId} Name:{stu.FirstName} {stu.LastName} Age:{stu.Age}" + "\n"));
-                Console.ReadLine();
-            }
+            //if (stuList.Count > 0)
+            //{
+            //    stuList.ForEach((stu) => Console.WriteLine($"ID:{stu.StudentId} Name:{stu.FirstName} {stu.LastName} Age:{stu.Age}" + "\n"));
+            //    Console.ReadLine();
+               
+            //}
             return stuList;
         }
 

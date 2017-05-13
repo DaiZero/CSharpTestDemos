@@ -8,7 +8,7 @@ namespace DZero.ConsoleApp.TestDemo
 {
     class EF_Test
     {
-        Student_dbEntities sde = new Student_dbEntities();
+        Student_dbEntities db = new Student_dbEntities();
         public void Add()
         {
 
@@ -16,7 +16,7 @@ namespace DZero.ConsoleApp.TestDemo
             stu.FirstName = "Shadow";
             stu.LastName = "Moon";
             stu.Age = 20;
-            if (sde.TblStudent.Where<TblStudent>(s => (s.FirstName + s.LastName) == (stu.FirstName + stu.LastName)).Count() > 0)
+            if (db.TblStudent.Where<TblStudent>(s => (s.FirstName + s.LastName) == (stu.FirstName + stu.LastName)).Count() > 0)
             {
                 Console.WriteLine($"重复姓名：{stu.FirstName} {stu.LastName}");
             }
@@ -25,8 +25,8 @@ namespace DZero.ConsoleApp.TestDemo
                 //方法一：
                 //sde.TblStudent.Add(stu);
                 //方法二:
-                sde.Entry(stu).State = System.Data.Entity.EntityState.Added;
-                sde.SaveChanges();
+                db.Entry(stu).State = System.Data.Entity.EntityState.Added;
+                db.SaveChanges();
                 Console.WriteLine($"新增学生：{stu.FirstName} {stu.LastName}");
             }
         }
@@ -38,14 +38,14 @@ namespace DZero.ConsoleApp.TestDemo
             stu.FirstName = "Shadow";
             stu.LastName = "Sun";
             stu.Age = 20;
-            if (sde.TblStudent.Where<TblStudent>(s => (s.FirstName + s.LastName) == (stu.FirstName + stu.LastName)).Count() > 0)
+            if (db.TblStudent.Where<TblStudent>(s => (s.FirstName + s.LastName) == (stu.FirstName + stu.LastName)).Count() > 0)
             {
                 Console.WriteLine($"重复姓名：{stu.FirstName} {stu.LastName}");
             }
             else
             {
-                sde.TblStudent.Add(stu);
-                sde.SaveChanges();
+                db.TblStudent.Add(stu);
+                db.SaveChanges();
                 Console.WriteLine($"新增学生：{stu.FirstName} {stu.LastName}");
             }
         }
@@ -53,7 +53,7 @@ namespace DZero.ConsoleApp.TestDemo
         public void Delete()
         {
 
-            var studentlist = sde.TblStudent.Where<TblStudent>(s => s.FirstName == "Shadow").ToList();
+            var studentlist = db.TblStudent.Where<TblStudent>(s => s.FirstName == "Shadow").ToList();
             if (studentlist != null)
             {
                 foreach (TblStudent item in studentlist)
@@ -61,15 +61,22 @@ namespace DZero.ConsoleApp.TestDemo
                     //方法一：
                     //sde.TblStudent.Remove(item);
                     //方法二：
-                    sde.Entry(item).State = System.Data.Entity.EntityState.Deleted;
+                    db.Entry(item).State = System.Data.Entity.EntityState.Deleted;
                     Console.WriteLine($"删除：{item.FirstName} {item.LastName}");
                 }
-                sde.SaveChanges();
+                db.SaveChanges();
             }
             else
             {
                 Console.WriteLine("数据表无FirstName为Shadow的人");
             }
+        }
+
+        public List<TblStudent> QueryAll()
+        {
+            List<TblStudent> stulist = new List<TblStudent>();
+            stulist = db.TblStudent.ToList();
+            return stulist;
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace DZero.ConsoleApp.TestDemo
@@ -44,15 +45,37 @@ namespace DZero.ConsoleApp.TestDemo
             //Test.write();
             //Console.ReadLine();
 
-            
+
 
             //new EF_Test().Add();
             //new EF_Test().Add2();
             //new EF_Test().Delete();
             //Console.ReadLine();
 
-           var s= new Dapper_Test().QueryAll();
+            //var s= new Dapper_Test().QueryAll();
+            // Console.ReadLine();
+
+            //EF 和 Dapper 
+            //查询表数据
+            int SelTimes = 1;
+            Stopwatch wach = new Stopwatch();
+            wach.Start();
+            for (int i = 0; i < SelTimes; i++)
+            {
+                new EF_Test().QueryAll();
+            }
+            wach.Stop();
+            Console.WriteLine($"EF 查表 {SelTimes} 次，花费时间： {wach.ElapsedMilliseconds} 毫秒。");
+            wach.Reset();
+            wach.Start();
+            for (int i = 0; i < SelTimes; i++)
+            {
+                new Dapper_Test().QueryAll();
+            }
+            wach.Stop();
+            Console.WriteLine($"Dapper 查表 {SelTimes} 次，花费时间： {wach.ElapsedMilliseconds} 毫秒。");
             Console.ReadLine();
+
         }
 
         private static void CallbackMethod(int m, int n, MyDelegate dlg)
