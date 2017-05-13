@@ -12,14 +12,18 @@ namespace DZero_Wcf_CalculatorService_Hosting
         {
             using (ServiceHost host = new ServiceHost(typeof(CalculatorService)))
             {
-                host.AddServiceEndpoint(typeof(ICalculator), new WSHttpBinding(), "http://127.0.0.1:9999/calculatorservice");
-                if (host.Description.Behaviors.Find<ServiceMetadataBehavior>() == null)
-                {
-                    ServiceMetadataBehavior behavior = new ServiceMetadataBehavior();
-                    behavior.HttpGetEnabled = true;
-                    behavior.HttpGetUrl = new Uri("http://127.0.0.1:9999/calculatorservice/metadata");
-                    host.Description.Behaviors.Add(behavior);
-                }
+                #region 服务寄宿代码,可在config里面配置
+                //host.AddServiceEndpoint(typeof(ICalculator), new WSHttpBinding(), "http://127.0.0.1:9999/calculatorservice");
+                // if (host.Description.Behaviors.Find<ServiceMetadataBehavior>() == null)
+                // {
+                //     ServiceMetadataBehavior behavior = new ServiceMetadataBehavior();
+                //     behavior.HttpGetEnabled = true;
+                //     behavior.HttpGetUrl = new Uri("http://127.0.0.1:9999/calculatorservice/metadata");
+                //     host.Description.Behaviors.Add(behavior);
+                // }
+
+                #endregion
+
                 host.Opened += delegate
                 {
                     Console.WriteLine("CalculaorService已经启动，按任意键终止服务！");

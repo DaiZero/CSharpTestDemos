@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero.ConsoleApp.TestDemo", "ConsoleApplication1\DZero.ConsoleApp.TestDemo.csproj", "{56B0CDC6-5982-4677-8AEA-4FBEB565EAD7}"
 EndProject
@@ -58,6 +58,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CalculatorService", "CalculatorService", "{ADB4E6AF-43F7-4339-BA4E-D72D254ADBA6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero_Wcf_CalculatorService_Hosting", "WcfDemo\CalculatorService\DZero_Wcf_CalculatorService_Hosting\DZero_Wcf_CalculatorService_Hosting.csproj", "{7271819E-4FE8-4966-A173-3D7885203AD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero_Wcf_CalculatorService_Client", "WcfDemo\CalculatorService\DZero_Wcf_CalculatorService_Client\DZero_Wcf_CalculatorService_Client.csproj", "{B7FB7242-D3C1-4FE1-B272-0F6C6ED7359A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +123,10 @@ Global
 		{7271819E-4FE8-4966-A173-3D7885203AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7271819E-4FE8-4966-A173-3D7885203AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7271819E-4FE8-4966-A173-3D7885203AD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7FB7242-D3C1-4FE1-B272-0F6C6ED7359A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7FB7242-D3C1-4FE1-B272-0F6C6ED7359A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7FB7242-D3C1-4FE1-B272-0F6C6ED7359A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7FB7242-D3C1-4FE1-B272-0F6C6ED7359A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -147,5 +153,6 @@ Global
 		{624D9718-00C8-4D7A-8D7D-E08D897387F3} = {ADB4E6AF-43F7-4339-BA4E-D72D254ADBA6}
 		{ADB4E6AF-43F7-4339-BA4E-D72D254ADBA6} = {DDABA181-F3FB-491F-8B4C-07C31D9CBDC4}
 		{7271819E-4FE8-4966-A173-3D7885203AD0} = {ADB4E6AF-43F7-4339-BA4E-D72D254ADBA6}
+		{B7FB7242-D3C1-4FE1-B272-0F6C6ED7359A} = {ADB4E6AF-43F7-4339-BA4E-D72D254ADBA6}
 	EndGlobalSection
 EndGlobal

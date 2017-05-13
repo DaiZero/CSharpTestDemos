@@ -15,16 +15,16 @@ namespace DZero_Wcf_CalculatorService_Contracts
         //CompositeType GetDataUsingDataContract(CompositeType composite);
 
         // TODO: 在此添加您的服务操作
-        [OperationContract(Name = "加")]
+        [OperationContract(Name = "Add")]
         double Add(double x, double y);
 
-        [OperationContract(Name = "减")]
+        [OperationContract(Name = "Subtract")]
         double Subtract(double x, double y);
 
-        [OperationContract(Name = "乘")]
+        [OperationContract(Name = "Multiply")]
         double Multiply(double x, double y);
 
-        [OperationContract(Name = "除")]
+        [OperationContract(Name = "Divide")]
         double Divide(double x, double y);
     }
 
