@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Service="DZero_Wcf_CalculatorService_Services" %>

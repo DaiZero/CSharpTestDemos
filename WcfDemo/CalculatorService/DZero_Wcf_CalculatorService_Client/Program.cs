@@ -1,10 +1,8 @@
 ﻿
 using DZero_Wcf_CalculatorService_Client.CalculatorService;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Reflection;
 
 namespace DZero_Wcf_CalculatorService_Client
 {
