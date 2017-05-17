@@ -61,7 +61,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero_Wcf_CalculatorService
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero_Wcf_CalculatorService_Client", "WcfDemo\CalculatorService\DZero_Wcf_CalculatorService_Client\DZero_Wcf_CalculatorService_Client.csproj", "{B7FB7242-D3C1-4FE1-B272-0F6C6ED7359A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero_Wcf_CalculatorService_Hosting_iis", "WcfDemo\CalculatorService\DZero_Wcf_CalculatorService_Hosting_iis\DZero_Wcf_CalculatorService_Hosting_iis.csproj", "{8DE18EC2-4E73-437D-9D9E-81BC1527F8FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero_Wcf_CalculatorService_IIS", "WcfDemo\CalculatorService\DZero_Wcf_CalculatorService_IIS\DZero_Wcf_CalculatorService_IIS.csproj", "{07AFECD2-9DA8-4A07-842B-FAB6974FF0D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,10 +129,10 @@ Global
 		{B7FB7242-D3C1-4FE1-B272-0F6C6ED7359A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7FB7242-D3C1-4FE1-B272-0F6C6ED7359A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7FB7242-D3C1-4FE1-B272-0F6C6ED7359A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8DE18EC2-4E73-437D-9D9E-81BC1527F8FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DE18EC2-4E73-437D-9D9E-81BC1527F8FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8DE18EC2-4E73-437D-9D9E-81BC1527F8FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8DE18EC2-4E73-437D-9D9E-81BC1527F8FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07AFECD2-9DA8-4A07-842B-FAB6974FF0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07AFECD2-9DA8-4A07-842B-FAB6974FF0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07AFECD2-9DA8-4A07-842B-FAB6974FF0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07AFECD2-9DA8-4A07-842B-FAB6974FF0D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,6 +160,6 @@ Global
 		{ADB4E6AF-43F7-4339-BA4E-D72D254ADBA6} = {DDABA181-F3FB-491F-8B4C-07C31D9CBDC4}
 		{7271819E-4FE8-4966-A173-3D7885203AD0} = {ADB4E6AF-43F7-4339-BA4E-D72D254ADBA6}
 		{B7FB7242-D3C1-4FE1-B272-0F6C6ED7359A} = {ADB4E6AF-43F7-4339-BA4E-D72D254ADBA6}
-		{8DE18EC2-4E73-437D-9D9E-81BC1527F8FB} = {ADB4E6AF-43F7-4339-BA4E-D72D254ADBA6}
+		{07AFECD2-9DA8-4A07-842B-FAB6974FF0D8} = {ADB4E6AF-43F7-4339-BA4E-D72D254ADBA6}
 	EndGlobalSection
 EndGlobal

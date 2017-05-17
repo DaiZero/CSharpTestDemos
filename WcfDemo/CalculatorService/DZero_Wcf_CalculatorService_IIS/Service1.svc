@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="DZero_Wcf_CalculatorService_IIS.Service1" CodeBehind="Service1.svc.cs" %>
