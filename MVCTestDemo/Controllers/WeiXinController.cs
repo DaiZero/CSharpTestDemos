@@ -11,8 +11,8 @@ namespace DZero.Mvc.TestDemo.Controllers
     public class WeiXinController : Controller
     {
         public static readonly string Token = "weixin";//与微信公众账号后台的Token设置保持一致，区分大小写。
-        public static readonly string EncodingAESKey = "GKKHOglHHu8Gymryi1SrlDTuSDWiyQ1JtFSkm5AHCii";//与微信公众账号后台的EncodingAESKey设置保持一致，区分大小写。
-        public static readonly string AppId = "wx495bdfb3b8b4077b";//与微信公众账号后台的AppId设置保持一致，区分大小写。
+        public static readonly string EncodingAESKey = "tKXvIfTTK7lv44KN35IW5ULOShIBTiHacLELSrNWqJ2";//与微信公众账号后台的EncodingAESKey设置保持一致，区分大小写。
+        public static readonly string AppId = "wx398d875b769a4eef";//与微信公众账号后台的AppId设置保持一致，区分大小写。
 
 
         // GET: WeiXin
