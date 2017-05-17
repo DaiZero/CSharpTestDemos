@@ -1,0 +1,21 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    x:Class="WpfApp_TestDemo.Views.ImageControl"
+        mc:Ignorable="d"
+        Title="ImageControl" Height="300" Width="749.227">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="434*"/>
+            <ColumnDefinition Width="150*"/>
+            <ColumnDefinition Width="157*"/>
+        </Grid.ColumnDefinitions>
+        <dxe:ImageEdit x:Name="imageEdit1" HorizontalAlignment="Left" Margin="22,21,0,0" VerticalAlignment="Top" Width="191" Height="175" Stretch="Fill" ShowMenuMode="Hover" ShowMenu="True" Source="{Binding Img1}">
+        </dxe:ImageEdit>
+        <dxe:PopupImageEdit x:Name="popupImageEdit1" HorizontalAlignment="Left" Margin="5.232,21,0,0" VerticalAlignment="Top" Width="211" Stretch="Fill" Grid.ColumnSpan="2" Height="175" Grid.Column="1" ShowMenu="True" ShowMenuMode="Hover"   Source="{Binding Img1}"/>
+    </Grid>
+</Window>

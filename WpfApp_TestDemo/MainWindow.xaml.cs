@@ -333,5 +333,11 @@ namespace WpfApp_TestDemo
             arrowLine al = new Views.arrowLine();
             al.Show();
         }
+
+        private void imagecontrol_Click(object sender, RoutedEventArgs e)
+        {
+            ImageControl ic = new ImageControl();
+            ic.Show();
+        }
     }
 }
