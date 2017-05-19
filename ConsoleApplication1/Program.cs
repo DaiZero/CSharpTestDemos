@@ -1,16 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Diagnostics;
-using System.Threading.Tasks;
+﻿using DZero.ConsoleApp.TestDemo.AutoMapper;
+using System;
+using System.Windows.Forms;
 
 namespace DZero.ConsoleApp.TestDemo
 {
+
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
+            Console.WriteLine("运行窗体");
+            MapperConfig.Config();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new AM_FunctionChoose_Form());
+            
             //Nullable<int> x = 1;
             //int? y = null;
             //y++;
@@ -55,26 +60,26 @@ namespace DZero.ConsoleApp.TestDemo
             //var s= new Dapper_Test().QueryAll();
             // Console.ReadLine();
 
-            //EF 和 Dapper 
-            //查询表数据
-            int SelTimes = 1;
-            Stopwatch wach = new Stopwatch();
-            wach.Start();
-            for (int i = 0; i < SelTimes; i++)
-            {
-                new EF_Test().QueryAll();
-            }
-            wach.Stop();
-            Console.WriteLine($"EF 查表 {SelTimes} 次，花费时间： {wach.ElapsedMilliseconds} 毫秒。");
-            wach.Reset();
-            wach.Start();
-            for (int i = 0; i < SelTimes; i++)
-            {
-                new Dapper_Test().QueryAll();
-            }
-            wach.Stop();
-            Console.WriteLine($"Dapper 查表 {SelTimes} 次，花费时间： {wach.ElapsedMilliseconds} 毫秒。");
-            Console.ReadLine();
+            ////EF 和 Dapper 
+            ////查询表数据
+            //int SelTimes = 1;
+            //Stopwatch wach = new Stopwatch();
+            //wach.Start();
+            //for (int i = 0; i < SelTimes; i++)
+            //{
+            //    new EF_Test().QueryAll();
+            //}
+            //wach.Stop();
+            //Console.WriteLine($"EF 查表 {SelTimes} 次，花费时间： {wach.ElapsedMilliseconds} 毫秒。");
+            //wach.Reset();
+            //wach.Start();
+            //for (int i = 0; i < SelTimes; i++)
+            //{
+            //    new Dapper_Test().QueryAll();
+            //}
+            //wach.Stop();
+            //Console.WriteLine($"Dapper 查表 {SelTimes} 次，花费时间： {wach.ElapsedMilliseconds} 毫秒。");
+            //Console.ReadLine();
 
         }
 
