@@ -339,5 +339,11 @@ namespace WpfApp_TestDemo
             ImageControl ic = new ImageControl();
             ic.Show();
         }
+
+        private void TreeView_Click(object sender, RoutedEventArgs e)
+        {
+            TreeViewDemo tvd = new TreeViewDemo();
+            tvd.Show();
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace WpfApp_TestDemo.Views
         public Test1()
         {
             InitializeComponent();
-            DataContext = new Test1ViewModel();
+            DataContext = new Test1_ViewModel();
         }
     }
 }

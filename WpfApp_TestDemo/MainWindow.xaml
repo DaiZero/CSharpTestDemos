@@ -37,6 +37,7 @@
         <Button Content="drag" x:Name="drag" Grid.Column="3" HorizontalAlignment="Left" Margin="84,174,0,0" VerticalAlignment="Top" Width="90" Click="drag_Click"/>
         <Button Content="arrowLine" x:Name="arrowLine" Grid.Column="3" HorizontalAlignment="Left" Margin="179,174,0,0" VerticalAlignment="Top" Width="90" Click="arrowLine_Click"  Grid.ColumnSpan="2"/>
         <Button Content="imagecontrol" x:Name="imagecontrol" Grid.Column="1" HorizontalAlignment="Left" Margin="0,212,0,0" VerticalAlignment="Top" Width="90" Click="imagecontrol_Click"/>
+        <Button Content="TreeView" x:Name="TreeView" Grid.Column="1" HorizontalAlignment="Left" Margin="95,212,0,0" VerticalAlignment="Top" Width="90" Click="TreeView_Click"/>
 
     </Grid>
 </Window>
