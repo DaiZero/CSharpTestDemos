@@ -342,7 +342,7 @@ namespace WpfApp_TestDemo
 
         private void TreeView_Click(object sender, RoutedEventArgs e)
         {
-            TreeViewDemo tvd = new TreeViewDemo();
+            TreeListControl_View tvd = new TreeListControl_View();
             tvd.Show();
         }
     }

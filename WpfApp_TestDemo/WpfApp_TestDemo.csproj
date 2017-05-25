@@ -46,9 +46,11 @@
     </Reference>
     <Reference Include="DevExpress.Mvvm.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.TreeMap.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpf.Core.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpf.Grid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpf.Grid.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.TreeMap.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -77,7 +79,7 @@
     </ApplicationDefinition>
     <Compile Include="Command\DelegateCommand.cs" />
     <Compile Include="ViewModels\ImageControlViewModel.cs" />
-    <Compile Include="ViewModels\TreeView_ViewModel.cs" />
+    <Compile Include="ViewModels\TreeListControl_ViewModel.cs" />
     <Compile Include="Views\arrowLine.xaml.cs">
       <DependentUpon>arrowLine.xaml</DependentUpon>
     </Compile>
@@ -101,8 +103,8 @@
     </Compile>
     <Compile Include="ViewModels\NotificationObject.cs" />
     <Compile Include="ViewModels\Test1_ViewModel.cs" />
-    <Compile Include="Views\TreeViewDemo.xaml.cs">
-      <DependentUpon>TreeViewDemo.xaml</DependentUpon>
+    <Compile Include="Views\TreeListControl_View.xaml.cs">
+      <DependentUpon>TreeListControl_View.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\webdemo.xaml.cs">
       <DependentUpon>webdemo.xaml</DependentUpon>
@@ -154,7 +156,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\TreeViewDemo.xaml">
+    <Page Include="Views\TreeListControl_View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
