@@ -12,7 +12,6 @@ namespace WpfApp_TestDemo.ViewModels
         public TreeListControl_ViewModel()
         {
             Employees = new ObservableCollection<Employee>(Employee.GetEmployees());
-            //Employees = Employee.GetEmployees();
             SelectedEmployee = new Employee();
             CopyVisibility = Visibility.Hidden;
             PasteVisibility = Visibility.Hidden;
@@ -158,6 +157,7 @@ namespace WpfApp_TestDemo.ViewModels
 
             CopyEmployee.ID = Guid.NewGuid().ToString();
             CopyEmployee.ParentID = SelectedEmployee.ID;
+            CopyEmployee.Name ="(Copy)" +SelectedEmployee.Name;
             Employees.Add(CopyEmployee);
         }
     }

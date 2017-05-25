@@ -70,10 +70,9 @@ D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\de\DevExpress.Xpf.Grid.v
 D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\es\DevExpress.Xpf.Grid.v16.2.Core.resources.dll
 D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\ja\DevExpress.Xpf.Grid.v16.2.Core.resources.dll
 D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\ru\DevExpress.Xpf.Grid.v16.2.Core.resources.dll
-D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\obj\Debug\Views\TreeViewDemo.g.cs
-D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\obj\Debug\Views\TreeViewDemo.baml
-D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\DevExpress.TreeMap.v16.2.Core.dll
 D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\DevExpress.Xpf.TreeMap.v16.2.dll
 D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\DevExpress.TreeMap.v16.2.Core.xml
 D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\DevExpress.Xpf.TreeMap.v16.2.xml
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\obj\Debug\Views\TreeListControl_View.g.cs
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\obj\Debug\Views\TreeListControl_View.baml
