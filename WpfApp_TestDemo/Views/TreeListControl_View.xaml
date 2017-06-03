@@ -14,7 +14,7 @@
         <Label Content="TreeListControl示例：" x:Name="Label1_Copy"  HorizontalAlignment="Left" Margin="182,32,0,0" VerticalAlignment="Top"/>
         <dxg:TreeListControl  AutoGenerateColumns="KeepOld" ItemsSource="{Binding Employees, Mode=TwoWay}" Margin="182,65,527,0" VerticalAlignment="Top" Height="307" SelectionMode="Row">
             <dxg:TreeListControl.View>
-                <dxg:TreeListView AllowPerPixelScrolling="True" ShowTotalSummary="True"  KeyFieldName="ID" ParentFieldName="ParentID"  ShowColumnHeaders="False" ShowBandsInCustomizationForm="False" ShowFilterPanelMode="Default" SearchPanelAllowFilter="True" ShowVerticalLines="False" ShowHorizontalLines="False" ShowIndicator="False" SearchPanelHighlightResults="False" IncrementalSearchMode="Enabled" ShowSearchPanelMode="Always" AllowEditing="False" ScrollingMode="Smart" AllowScrollHeaders="True" ExtendScrollBarToFixedColumns="True" FocusedRow="{Binding SelectedEmployee, Mode=TwoWay}" ShowBandsPanel="False" />
+                <dxg:TreeListView AllowPerPixelScrolling="True" ShowTotalSummary="True"  KeyFieldName="ID" ParentFieldName="ParentID"  ShowColumnHeaders="False" ShowBandsInCustomizationForm="False" ShowFilterPanelMode="Default" SearchPanelAllowFilter="True" SearchPanelHighlightResults="False" IncrementalSearchMode="Enabled" ShowSearchPanelMode="Always" ShowHorizontalLines="False" ShowVerticalLines="False"  ShowIndicator="False"  AllowEditing="False" ScrollingMode="Smart" AllowScrollHeaders="True" ExtendScrollBarToFixedColumns="True" FocusedRow="{Binding SelectedEmployee, Mode=TwoWay}" ShowBandsPanel="False" />
             </dxg:TreeListControl.View>
             <dxg:TreeListControl.ContextMenu>
                 <ContextMenu>

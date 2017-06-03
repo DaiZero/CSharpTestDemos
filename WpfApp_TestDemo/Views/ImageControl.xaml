@@ -4,7 +4,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+     xmlns:local="clr-namespace:WpfApp_TestDemo.ViewModels"
     x:Class="WpfApp_TestDemo.Views.ImageControl"
         mc:Ignorable="d"
         Title="ImageControl" Height="300" Width="749.227">
@@ -14,7 +14,8 @@
             <ColumnDefinition Width="150*"/>
             <ColumnDefinition Width="157*"/>
         </Grid.ColumnDefinitions>
-        <dxe:ImageEdit x:Name="imageEdit1" HorizontalAlignment="Left" Margin="22,21,0,0" VerticalAlignment="Top" Width="191" Height="175" Stretch="Fill" ShowMenuMode="Hover" ShowMenu="True" Source="{Binding Img1}">
+        <dxe:ImageEdit x:Name="imageEdit1" HorizontalAlignment="Left" Margin="22,21,0,0" VerticalAlignment="Top" Width="191" Height="175" Stretch="Fill" ShowMenuMode="Hover" EditValue="{Binding Logo, Converter={local:ImageConverter}, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" ShowMenu="True" >
+            <!-- Source="{Binding Img1,UpdateSourceTrigger=PropertyChanged,Converter={local:ImageConverter}}" -->
         </dxe:ImageEdit>
         <dxe:PopupImageEdit x:Name="popupImageEdit1" HorizontalAlignment="Left" Margin="5.232,21,0,0" VerticalAlignment="Top" Width="211" Stretch="Fill" Grid.ColumnSpan="2" Height="175" Grid.Column="1" ShowMenu="True" ShowMenuMode="Hover"   Source="{Binding Img1}"/>
     </Grid>
