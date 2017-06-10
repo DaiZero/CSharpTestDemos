@@ -9,7 +9,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using DevExpress.Core;
+using DevExpress.Xpf.Core;
+using DevExpress.Xpf.Core.ConditionalFormatting;
+using DevExpress.Xpf.Core.DataSources;
+using DevExpress.Xpf.Core.Serialization;
+using DevExpress.Xpf.Core.ServerMode;
 using DevExpress.Xpf.DXBinding;
+using DevExpress.Xpf.Grid;
+using DevExpress.Xpf.Grid.ConditionalFormatting;
+using DevExpress.Xpf.Grid.LookUp;
+using DevExpress.Xpf.Grid.TreeList;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -20,6 +30,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Ink;
 using System.Windows.Input;
+using System.Windows.Interactivity;
 using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Animation;

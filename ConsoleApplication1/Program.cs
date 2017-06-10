@@ -10,12 +10,12 @@ namespace DZero.ConsoleApp.TestDemo
         [STAThread]
         static void Main(string[] args)
         {
-            Console.WriteLine("运行窗体");
-            MapperConfig.Config();
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AM_FunctionChoose_Form());
-            
+            //Console.WriteLine("运行窗体");
+            //MapperConfig.Config();
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new AM_FunctionChoose_Form());
+
             //Nullable<int> x = 1;
             //int? y = null;
             //y++;
@@ -55,7 +55,8 @@ namespace DZero.ConsoleApp.TestDemo
             //new EF_Test().Add();
             //new EF_Test().Add2();
             //new EF_Test().Delete();
-            //Console.ReadLine();
+            new EF_Test().QueryAll();
+            Console.ReadLine();
 
             //var s= new Dapper_Test().QueryAll();
             // Console.ReadLine();

@@ -75,8 +75,13 @@ namespace DZero.ConsoleApp.TestDemo
         public List<TblStudent> QueryAll()
         {
             List<TblStudent> stulist = new List<TblStudent>();
-            stulist = db.TblStudent.ToList();
-            return stulist;
+            var studentPredicate = PredicateBuilder.False<TblStudent>();
+
+            studentPredicate = studentPredicate.Or(x=>x.FirstName.Contains("Shadow"));
+            studentPredicate = studentPredicate.Or(x => x.LastName.Contains("Sun"));
+
+            var data = db.TblStudent.Where(studentPredicate).ToList();//.Compile() 将生成一个委托，表示 lambda 表达式。
+            return data;
         }
     }
 }

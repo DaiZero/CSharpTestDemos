@@ -77,3 +77,14 @@ D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\obj\Debug\WpfApp_TestDemo.exe.lice
 D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\obj\Debug\WpfApp_TestDemo.exe
 D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\obj\Debug\WpfApp_TestDemo.pdb
 D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\System.Windows.Interactivity.dll
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll

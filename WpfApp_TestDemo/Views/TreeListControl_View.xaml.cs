@@ -1,4 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using DevExpress.Data.Filtering;
+using DevExpress.Data.Filtering.Helpers;
+using DevExpress.Xpf.Editors;
+using DevExpress.Xpf.Grid;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
 using System.Windows;
 using WpfApp_TestDemo.ViewModels;
 
@@ -13,6 +20,51 @@ namespace WpfApp_TestDemo.Views
         {
             InitializeComponent();
             this.DataContext = new TreeListControl_ViewModel();
+
+        }
+
+
+
+        private void TreeListView_PreviewMouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Console.WriteLine("PreviewMouseDown");
+        }
+
+        private void TreeListView_CustomNodeFilter(object sender, DevExpress.Xpf.Grid.TreeList.TreeListNodeFilterEventArgs e)
+        {
+            #region 方法一
+            var view = (TreeListView)sender;
+            if (string.IsNullOrEmpty(view.SearchString))
+                return;
+
+            if (e.Node.HasChildren)
+            {
+                SearchControl searchControl = view.SearchControl;
+                string criteriaString = CriteriaOperator.LegacyToString(searchControl.FilterCriteria).Replace("DxFts_", "");
+                var ee = new ExpressionEvaluator(TypeDescriptor.GetProperties(typeof(Employee)), criteriaString, false);
+
+                e.Visible = ee.Fit(e.Node.Content) || new TreeListNodeIterator(e.Node).Select(x => x.Content).Any(ee.Fit);
+                e.Handled = true;
+            }
+            #endregion
+
+
+            #region 方法二（有缺陷）
+            //TreeListNode node = e.Node;
+            //TreeListNode parentNode = e.Node.ParentNode;
+            //if (parentNode == null)
+            //{
+            //    e.Visible = true;
+            //    e.Handled = true;
+            //    return;
+            //}
+            //if (parentNode != null && node.IsExpanded)
+            //{
+            //    e.Visible = true;
+            //    e.Handled = true;
+            //}
+            #endregion
+
         }
     }
     public class Node

@@ -7,7 +7,7 @@ using WpfApp_TestDemo.Views;
 
 namespace WpfApp_TestDemo.ViewModels
 {
-    class TreeListControl_ViewModel : NotificationObject
+  public  class TreeListControl_ViewModel : NotificationObject
     {
         public TreeListControl_ViewModel()
         {
@@ -20,6 +20,10 @@ namespace WpfApp_TestDemo.ViewModels
 
             this.PasteCommand = new DelegateCommand();
             this.PasteCommand.ExecuteAction = new Action<object>(this.Paste);
+
+
+            this.CustomNodeFilterCommand = new DelegateCommand();
+            this.CustomNodeFilterCommand.ExecuteAction = new Action<object>(CustomNodeFilter);
         }
 
 
@@ -159,6 +163,14 @@ namespace WpfApp_TestDemo.ViewModels
             CopyEmployee.ParentID = SelectedEmployee.ID;
             CopyEmployee.Name ="(Copy)" +SelectedEmployee.Name;
             Employees.Add(CopyEmployee);
+        }
+
+        public DelegateCommand CustomNodeFilterCommand { get; set; }
+
+        private void CustomNodeFilter(object paramemter)
+        {
+
+            Console.WriteLine($"{paramemter}");
         }
     }
 
