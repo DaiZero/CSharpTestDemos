@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CommonLibrary
 {
-    class DirFile
+   public class DirFile
     {
 
         #region 检测指定目录是否存在

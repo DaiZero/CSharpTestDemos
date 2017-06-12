@@ -3,7 +3,7 @@ using System.Xml;
 
 namespace CommonLibrary
 {
-    class XmlHelper
+   public class XmlHelper
     {
 
         #region 字段定义
