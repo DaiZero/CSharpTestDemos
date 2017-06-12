@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\GitHubCode\CSharpTestDemos\PrismDemo\Module\DZero.Prism.TestDemo.Client.UserLogin.Module\obj\Debug\
+E:\GitHubCode\CSharpTestDemos\PrismDemo\Module\DZero.Prism.TestDemo.Client.UserLogin.Module\obj\Debug\
 DZero.Prism.TestDemo.Client.UserLogin.Module
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 1-1402011686
 
-91215353278
-67980500056
+9409037063
+67-1464797603
 Views\UserLoginView.xaml;
 
-False
+True
 

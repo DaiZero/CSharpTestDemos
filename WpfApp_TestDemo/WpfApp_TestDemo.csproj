@@ -87,6 +87,9 @@
     <Compile Include="Views\drag.xaml.cs">
       <DependentUpon>drag.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\GridControl_View.xaml.cs">
+      <DependentUpon>GridControl_View.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ImageControl.xaml.cs">
       <DependentUpon>ImageControl.xaml</DependentUpon>
     </Compile>
@@ -134,6 +137,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\drag.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GridControl_View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
