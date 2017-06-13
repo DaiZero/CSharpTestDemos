@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="File\DirFile.cs" />
+    <Compile Include="LinqExtend\PredicateBuilder.cs" />
     <Compile Include="Log\Log.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XML\XmlHelper.cs" />
