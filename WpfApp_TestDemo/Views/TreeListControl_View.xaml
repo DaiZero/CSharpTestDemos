@@ -31,7 +31,7 @@
                     <MenuItem Header="Paste" Command="{Binding PasteCommand}" Visibility="{Binding PasteVisibility}"/>
                 </ContextMenu>
             </dxg:TreeListControl.ContextMenu>
-            <dxg:TreeListColumn FieldName="Name" ShowInColumnChooser="True" Visible="True" FixedWidth="True" HorizontalHeaderContentAlignment="Left"/>
+            <dxg:TreeListColumn FieldName="Name" ShowInColumnChooser="True" Visible="True"  Width="1*" HorizontalHeaderContentAlignment="Left"/>
 
         </dxg:TreeListControl>
         <dx:DXTabControl   Margin="517,65,136,210">
