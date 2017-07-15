@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\GitHubCode\CSharpTestDemos\WpfApp_TestDemo\App.xaml
-121037940251
+131490080978
 
-21208269914
+22-444886841
 301415609129
-MainWindow.xaml;Page1.xaml;Views\arrowLine.xaml;Views\drag.xaml;Views\ImageControl.xaml;Views\MovingButton.xaml;Views\NoWindowStyle.xaml;Views\Test1.xaml;Views\Test2.xaml;Views\TreeListControl_View.xaml;Views\webdemo.xaml;Views\Window_cnblogsDemo.xaml;
+MainWindow.xaml;Page1.xaml;Views\arrowLine.xaml;Views\drag.xaml;Views\GridControl_View.xaml;Views\ImageControl.xaml;Views\MovingButton.xaml;Views\NoWindowStyle.xaml;Views\Test1.xaml;Views\Test2.xaml;Views\TreeListControl_View.xaml;Views\webdemo.xaml;Views\Window_cnblogsDemo.xaml;
 
-True
+False
 
