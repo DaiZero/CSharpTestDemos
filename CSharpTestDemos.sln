@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero.ConsoleApp.TestDemo", "ConsoleApplication1\DZero.ConsoleApp.TestDemo.csproj", "{56B0CDC6-5982-4677-8AEA-4FBEB565EAD7}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp_TestDemo", "WpfApp_T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_CrazyE_Demo", "Wpf_CrazyE_Demo\Wpf_CrazyE_Demo.csproj", "{26A1F8E8-23DB-4564-AA59-414FB2C49DF3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_Prism_Demo", "04_Prism_Demo", "{C4FDD323-239D-4A0E-8A36-4161E9D67804}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_Prism", "04_Prism", "{C4FDD323-239D-4A0E-8A36-4161E9D67804}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Shell", "01_Shell", "{F637FD4E-88F6-461D-949F-510032968CC8}"
 EndProject
@@ -17,17 +17,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero.Prism.TestDemo.Shell"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero.Mvc.TestDemo", "MVCTestDemo\DZero.Mvc.TestDemo.csproj", "{5EC4C71E-674A-4054-B09F-F0DEE8D672F1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_Mvc_Demo", "03_Mvc_Demo", "{AF31E62F-2E2A-4255-A577-CF424DB5CAD0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_MVC", "03_MVC", "{AF31E62F-2E2A-4255-A577-CF424DB5CAD0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{BF3E3B0A-A390-4785-ACCA-70B9E933A034}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06_Wpf_Demo", "06_Wpf_Demo", "{1BACCC15-41B5-4DBE-ABCC-EC25B009FA98}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06_Wpf", "06_Wpf", "{1BACCC15-41B5-4DBE-ABCC-EC25B009FA98}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrazyE", "CrazyE", "{6B235970-95AC-4905-AC37-8ADB46DE8045}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{7E9AFEE3-2D8F-42FE-BF4F-7AD8C914AC4A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_ConsoleApp_Demo", "02_ConsoleApp_Demo", "{ECCBB386-80AC-4565-9E04-9390020CB29C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_ConsoleApp", "02_ConsoleApp", "{ECCBB386-80AC-4565-9E04-9390020CB29C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00_Infrastructure", "00_Infrastructure", "{8DDE6EF9-A71C-41DB-BEB6-0BC6EDC13B6A}"
 EndProject
@@ -49,7 +49,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_DB_Dict", "05_DB_Dict", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero_DB_dict", "DZero_DB_dict\DZero_DB_dict.csproj", "{C82C8982-FE04-4FE0-A8FE-E176459838D9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07_WCF_Demo", "07_WCF_Demo", "{DDABA181-F3FB-491F-8B4C-07C31D9CBDC4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07_WCF", "07_WCF", "{DDABA181-F3FB-491F-8B4C-07C31D9CBDC4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero_Wcf_CalculatorService_Contracts", "WcfDemo\CalculatorService\DZero_Wcf_CalculatorService_Contracts\DZero_Wcf_CalculatorService_Contracts.csproj", "{9D8C3AC5-846F-4C1C-9477-1432B9AB03B1}"
 EndProject
@@ -62,6 +62,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero_Wcf_CalculatorService_Client", "WcfDemo\CalculatorService\DZero_Wcf_CalculatorService_Client\DZero_Wcf_CalculatorService_Client.csproj", "{B7FB7242-D3C1-4FE1-B272-0F6C6ED7359A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZero_Wcf_CalculatorService_IIS", "WcfDemo\CalculatorService\DZero_Wcf_CalculatorService_IIS\DZero_Wcf_CalculatorService_IIS.csproj", "{07AFECD2-9DA8-4A07-842B-FAB6974FF0D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08_TensorFlowSharp", "08_TensorFlowSharp", "{9691BC59-4D6E-4AF3-BC60-B06D5876616C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
